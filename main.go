@@ -7,7 +7,7 @@ import (
 
 func Hello(name string) (string, error) {
 	if name == "" {
-		return "", errors.New("el nombre es vacío")
+		return "", errors.New("el nombre está vacío")
 	}
 	greeting := fmt.Sprintf("Hola %v, bienvenido!", name)
 	return greeting, nil
